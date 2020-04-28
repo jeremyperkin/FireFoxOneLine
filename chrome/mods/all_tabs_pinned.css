@@ -1,0 +1,59 @@
+/* Hide unecessary stuff */
+.tabbrowser-tab:not([selected="true"]) .tab-label-container,
+.tabbrowser-tab:not([selected="true"]) .tab-close-button,
+.tabbrowser-tab .tab-line,
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  display: none !important;
+}
+/* Center the tab icon */
+.tabbrowser-tab:not([selected="true"]) .tab-icon-image {
+  margin-inline-end: 0px !important;
+  display: -moz-box !important;
+}
+/* Better style for the tab icon image */
+.tab-icon-image {
+  border-radius: 100% !important;
+  padding: 6px !important;
+  height: 28px !important;
+  width: 28px !important;
+  color: var(--foreground) !important;
+  background-color: var(--tab-icon-background) !important;
+}
+/* Compact the non-selected tabs */
+.tabbrowser-tab:not([selected=true]) {
+  max-width: 42px !important;
+  min-width: 42px !important;
+}
+.tabbrowser-tab:not([selected=true]) .tab-background {
+  background-image: none !important;
+  border: none !important;
+}
+/* Better readability on the text of tabs */
+.tabbrowser-tab .tab-content {
+  color: var(--selected-tab-foreground) !important;
+  font-weight: 900 !important;
+  transition: all 0.6s ease;
+}
+/* Size of the selected tab */
+.tabbrowser-tab[selected=true] {
+  max-width: 42px !important;
+  max-height: 37px !important;
+}
+/* Color the selected and hovered tabs */
+.tabbrowser-tab[selected="true"] .tab-background,
+.tabbrowser-tab:hover:not([selected="true"]) .tab-background {
+  background-image: none !important;
+  background-color: var(--accent) !important;
+  border: none !important;
+}
+/* Put the sound overlay up the icon */
+.tab-icon-sound:not([selected]) {
+  display: none;
+}
+.tab-icon-overlay:not([selected]):-moz-any([soundplaying],[muted],[activemedia-blocked]){
+  display: -moz-box !important;
+  margin-inline-start: -6px;
+  margin-inline-end: -10px;
+}
+

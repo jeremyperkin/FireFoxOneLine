@@ -1,0 +1,9 @@
+/* Darker background color for blank pages and fixes the white flash problem */
+#browser vbox#appcontent tabbrowser,
+#content,
+#tabbrowser-tabpanels,
+browser[type=content-primary],
+browser[type=content] > html {
+  background: var(--blank-background) !important;
+}
+

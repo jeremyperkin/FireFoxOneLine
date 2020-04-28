@@ -1,0 +1,10 @@
+/* Change the icon of the hamburger menu */
+#PanelUI-menu-button {
+  border-image-source: none !important;
+  list-style-image: url("../dev.png") !important;
+}
+/* Change the icon of the overflow menu */
+#nav-bar-overflow-button {
+  list-style-image: url("../overflow.png") !important;
+}
+

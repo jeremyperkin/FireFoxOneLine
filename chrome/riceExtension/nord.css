@@ -1,0 +1,50 @@
+
+:root {
+  --accent:         #8ad;
+  --bg:             #2E3440;
+  --bg2:            #2E3440;
+  --bgbar:          #434c5E;
+  --bgbar2:         #3B4253;
+  --bgbar-hov:      #8ad;
+  --bg-fw:          #3B4253;
+  --bg-fwhov:       #434c5E;
+  --bg-fwspan:      #2E3440;     
+  --dashbg:         #2E3440;
+  --main-text:      #E5E9F0;  
+  --light-text:     #ECEFF4;
+  --dark-text:      #2E3440;
+  --dark-text2:     #4C566A;
+  --on:             #A3BE8C;
+  --off:            #BF616A;  
+  --button:         #4C566A;
+  --button-hov:     #5E81AC;
+  --button-a:       #3B4253;
+  --border:         #2E3440;
+  --border2:        #2E3440;
+  --icon1:          #3B4253;
+
+
+/*Available Colors for Nord theme. Feel free to add*/
+
+  /*polar*/
+  --nordp-0:  #2E3440;
+  --nordp-1:  #3B4253;
+  --nordp-2:  #434c5E;
+  --nordp-3:  #4C566A;
+  /*snowstorm*/
+  --nords-0:  #d8DEE9;
+  --nords-1:  #E5e9f0;
+  --nords-2:  #ECEFF4;
+  /*frost*/
+  --nordf-0:  #8FBCBB;
+  --nordf-1:  #88C0D0;
+  --nordf-2:  #81A1C1;
+  --nordf-3:  #5E81AC;
+  --nordf-4:  #8ad;
+  /*aurora*/
+  --norda-0:  #BF616A;
+  --norda-1:  #D08770;
+  --norda-2:  #EBCB8B;
+  --norda-3:  #A3Be8C;
+  --norda-4:  #B48EAD;
+}

@@ -1,0 +1,36 @@
+@import url("riceExtension/uBotheme.css");
+
+/* uBlock Origin Color change */
+/*Internal UUID is found here about:debugging#/runtime/this-firefox*/
+@-moz-document url-prefix("moz-extension://Internal UUID here/"){
+	body { background-color: var(--uBo-bg) !important; color: var(--uBo-text) !important; }
+	a { color: var(--a) !important; }
+	h2 { background-color: var(--h2)  !important; color: var(--h2-text) !important; }
+	code { background-color: var(--code) !important; }
+	#switch .fa { color: var(--switch-fa-on) !important; }
+    body.off #switch .fa { color: var(--switch-fa-off)!important; }
+	.tool { color: var(--tool) !important; }
+	.tool.enabled:hover { color: var(--tool-enable-hover) !important; }
+	.permatoolbar { background-color: var(--permatoolbar-bg) !important; }
+	.permatoolbar .button { background-color: var(--permatoolbar-button) !important; }
+	.permatoolbar .button:hover { background-color: var(--permatoolbar-button-hover) !important; }
+	#tooltip { background-color: var(--tooltip-bg) !important; border: 1px solid var(--border-fw) !important; color: var(--tooltip-text) !important;}
+	#firewallContainer > div { background-color: var(--fw-bg) !important; }
+	#firewallContainer > div:hover { background-color: var(--fw-hover) !important; }
+	#firewallContainer > div > span { color: (--fw-hover) !important; border-bottom: 1px solid var(--borders-fw) !important;}
+	#firewallContainer > div > span:first-of-type ~ span { border-left: 1px solid var(--borders-fw) !important;}
+	#extraTools { background-color: var(--extraTools-bg) !important; }
+	#extraTools > span:hover { color: var(--extraTool-spanhover) !important; }
+	#dashboard-nav-widgets { background-color: var(--dash-nav-widgets) !important; border-bottom: 1px solid var(--dash-borders) !important;}
+	.tabButton { background-color: var(--tabbutton) !important; border: 1px solid var(--tab-borders) !important; border-bottom: 1px solid var(--tab-borders) !important; color: var(--tabbutton-text) !important; }
+	.tabButton.selected { background-color: var(--tab-select) !important; border-bottom: 1px solid var(--borders-fw) !important; }
+	#diff li { background-color: var(--diffli-bg) !important; }
+	#diff li:nth-child(even) { background-color: var(--diffli-nth-bg) !important; }
+	#diff textarea { background-color: var(--diff-textarea-bg) !important; color: var(--diff-textarea-text) !important; }
+	#loggerSettingsDialog,
+	#modalOverlayContainer,
+	#netFilteringDialog,
+	#netFilteringDialog > .panes > .details > div,
+	#netFilteringDialog > div.panes > .dynamic .row {background-color: var(--logdialog-bg) !important;}
+	#domTree {background-color: var(--log-inspect-bg)!important; color: var(--inspector-text)!important}
+}

@@ -1,0 +1,132 @@
+@import url("riceExtension/nord.css");
+
+:root {
+  --accent:              var(--nordf-2);
+  --background:          var(--nordp-0);
+  --background-bar:      var(--background);
+  --blank-background:    var(--background);
+  --foreground:          var(--nords-0);
+  --tab-icon-background: var(--norda-1);
+  --newtab-background-color: var(--background);
+  --lwt-accent-color: var(--nordp-0) !important;
+  --lwt-sidebar-background-color: var(--background);
+  --lwt-sidebar-text-color: var(--foreground);
+  --ytd-searchbox-legacy-border-color: var(--background)!important;
+  --ytd-searchbox-legacy-button-border-color: var(--background)!important;
+  /*polar*/
+  --nordp-0:  #2E3440;
+  --nordp-1:  #3B4253;
+  --nordp-2:  #434c5E;
+  --nordp-3:  #4C566A;
+  /*snowstorm*/
+  --nords-0:  #d8DEE9;
+  --nords-1:  #E5e9f0;
+  --nords-2:  #ECEFF4;
+  /*frost*/
+  --nordf-0:  #8FBCBB;
+  --nordf-1:  #88C0D0;
+  --nordf-2:  #81A1C1;
+  --nordf-3:  #5E81AC;
+  --nordf-4:  #8ad;
+
+  /*aurora*/
+  --norda-0:  #BF616A;
+  --norda-1:  #D08770;
+  --norda-2:  #EBCB8B;
+  --norda-3:  #A3Be8C;
+  --norda-4:  #B48EAD;
+  /*testing out variable names*/
+  --window: #434C5E;
+  --base: #3b4252;
+  --alt-base: #2E353D78;
+  --button-color: #3c4454;
+  --light: #2e3440;
+  --mid-light: #2e3440;
+  --dark: #2e3440;
+  --mid: #2e3440;
+  --highlight: #4c566a;
+  --inactive-highlight: #4c566a;
+  --text: #d8dee9;
+  --window-text: #d8dee9;
+  --button-text: #d8dee9;
+  --disabled-text: #d8dee978;
+  --tooltip-text: #d8dee9;
+  --highlight-text: #d8dee9;
+  --link: #646464;
+  --link-visited: #7f8c8d;
+  --progress-indicator-text: #d8dee9; 
+
+  /*uBo 
+  --uBo-bg:                            var(--nordp-0); /* body 
+  --uBo-text:                          var(--nords-1); /* body 
+  --logdialog-bg:                      var(--nordp-0);
+  --logdialog-text:                    var(--nords-1);
+  --netfilt-bg:                        var(--nordp-0);
+  --netfilt-text:                      var(--nordp-0);
+  --h2:                                var(--nordp-0);
+  --h2-text:                           var(--nords-2);
+  --a:                                 var(--nordf-4);
+  --code:                              var(--nords-2);
+  --switch-fa-on:                      var(--norda-3);
+  --switch-fa-off:                     var(--norda-0);
+  --tool:                              var(--nordp-1);
+  --tool-enabled-hover:                var(--nordf-4);
+  --permatoolbar-bg:                   var(--nordp-2);
+  --permatoolbar-button:               var(--nordp-3);
+  --permatoolbar-button-hover:         var(--nordf-3);
+  --tooltip-bg:                        var(--nords-0);                         
+  --tooltip-text:                      var(--nordp-0);
+  --fw-bg:                             var(--nordp-1);
+  --fw-hover:                          var(--nordp-2);
+  --fw-span:                           var(--nordp-0);
+  --borders-fw:                        var(--nordp-0);
+  --extraTools-bg:                     var(--nordp-1);
+  --extraTools-spanhover:              var(--nordf-4);
+  --dash-nav-widgets:                  var(--nordp-0);
+  --dash-borders:                      var(--nords-0);
+  --tabbutton:                         var(--nordp-3);
+  --tab-select:                        var(--nordp-0);
+  --tabbutton-text:                    var(--nords-2);
+  --tab-borders:                       var(--nords-0);
+  --diffli-bg:                         var(--nordp-1);
+  --diffli-nth-bg:                     var(--nordp-0);
+  --diff-textarea-bg:                  var(--nordp-3);
+  --diff-textarea-text:                var(--nords-1);
+*/
+  --uBo-bg:                            var(--bg);
+  --uBo-text:                          var(--main-text);
+  --logdialog-bg:                      var(--bg2);
+  --logdialog-text:                    var(--main-text);
+  --netfilt-bg:                        var(--bg2);
+  --netfilt-text:                      var(--dark-text);                   
+  --h2:                                var(--dark-text);
+  --h2-text:                           var(--main-text);
+  --a:                                 var(--accent);
+  --code:                              var(--light-text);
+  --switch-fa-on:                      var(--on);
+  --switch-fa-off:                     var(--off);
+  --tool:                              var(--icon1);
+  --tool-enabled-hover:                var(--accent);
+  --permatoolbar-bg:                   var(--bgbar);
+  --permatoolbar-button:               var(--button);
+  --permatoolbar-button-hover:         var(--button-hov);
+  --tooltip-bg:                        var(--bg);               
+  --tooltip-text:                      var(--dark-text); 
+  --firewallcontainer-bg:              var(--bg-fw);
+  --firewallcontainer-hover:           var(--nords-0);
+  --firewallcontainer-span:            var(--nords-1);
+  --borders-fw:                        var(--border);
+  --extraTools-bg:                     var(--bgbar2);
+  --extraTools-spanhover:              var(--bgbar2-hov);
+  --dashboard-nav-widgets:             var(--dashbg);
+  --dashboard-borders:                 var(--border2);
+  --tabbutton:                         var(--button2);
+  --tab-select:                        var(--button-a);
+  --tabbutton-text:                    var(--light-text);
+  --tab-borders:                       var(--border3);
+  --diffli-bg:                         var(--bg2);
+  --diffli-nth-bg:                     var(--bg);
+  --diff-textarea-bg:                  var(--dark-text2);
+  --diff-textarea-text:                var(--light-text);
+
+}

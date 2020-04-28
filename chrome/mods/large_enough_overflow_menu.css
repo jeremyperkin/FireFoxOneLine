@@ -1,0 +1,8 @@
+/* Stop some extensions in the overflow menu from creating an horizontal scrollbar */
+/*#widget-overflow-mainView,
+#widget-overflow-fixed-list .toolbarbutton-1 {
+  min-width: 486px !important;
+  max-width: 486px !important;
+  width: 486px !important;
+}
+

@@ -1,0 +1,17 @@
+/* Color the search icon of the urlbar */
+#identity-box[pageproxystate="invalid"] {
+  fill: white !important;
+}
+/* Color the fav icon when on a bookmarked page */
+#star-button[starred] {
+  fill: var(--accent) !important;
+}
+/* Color the shield and http(s) icons of the urlbar */
+#tracking-protection-icon-container,
+#identity-box {
+  fill: var(--accent)!important;
+  fill-opacity: 1 !important;
+}
+#tracking-protection-icon-box:not([hasException])[active],
+#tracking-protection-icon-animatable-image {
+  transform: none !important;}

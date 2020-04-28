@@ -1,0 +1,12 @@
+/* Color of the loading animation */
+.tabbrowser-tab:not([selected="true"]) .tab-throbber::before {
+  fill: var(--foreground) !important;
+}
+.tabbrowser-tab[selected="true"] .tab-throbber::before {
+  fill: var(--selected-tab-foreground) !important;
+}
+/* Hide the tab icon leaving only the throbber when loading a tab */
+.tabbrowser-tab[busy] .tab-icon-image {
+  display: none !important;
+}
+

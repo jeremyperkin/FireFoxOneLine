@@ -1,0 +1,145 @@
+@import url("colors.css");
+@import url("mods/all_tabs_pinned.css");
+/*@import url("mods/change_icons.css");*/
+@import url("mods/color_loading_animation.css");
+@import url("mods/color_urlbar_buttons.css");
+@import url("mods/fix_white_flash.css");
+@import url("mods/large_enough_overflow_menu.css");
+@import url("mods/navbar_tabs_oneliner.css");
+@import url("mods/urlbar_full_width.css");
+@import url("mods/window_control_placeholder_support.css");
+
+:root{
+  --selected-icon-background: var(--background);
+  --selected-tab-foreground: var(--background);
+}
+
+/* Color the oneliner's background */
+#nav-bar,
+.toolbar-items,
+#tabbrowser-tabs {
+  background: var(--background-bar) !important;
+}
+.tabbrowser-tab .tab-label {
+	display:none !important;
+}
+/* Resizes tabs to minimum width */
+.tabbrowser-tab[fadein]:not([pinned]) {
+	max-width: 47px !important;
+	min-width: 41px !important;
+}
+.tab-content:not([pinned]) {
+  padding-left: 9px !important;
+  padding-right: 0px !important;
+ }
+ .tabbrowser-tab:not([pinned="true"]):not(:hover) .tab-close-button {
+  display: none !important;
+}
+/* Hide the uglygrey border */
+#PanelUI-button {
+  border-left: none !important;
+}
+
+/* Reorder the buttons before the tabs */
+#urlbar-container,
+#forward-button,
+#back-button,
+#nav-bar-overflow-button,
+#PanelUI-button {
+  -moz-box-ordinal-group: 0 !important;
+}
+#bookmarks-menu-button {
+  -moz-box-ordinal-group: 1 !important;
+}
+
+/* Make the urlbar rectangle-like */
+#urlbar {
+  padding: 2px !important;
+  border-radius: 0px !important;
+}
+
+/* Change the color around the urlbar on focus */
+#urlbar:not(.hidden-focus)[focused="true"],
+#searchbar:focus-within {
+  border-color: var(--accent) !important;
+}
+menubar, toolbar, nav-bar, #TabsToolbar, #Personal > *{
+  background-color: var(--background) !important;}
+
+ /* .urlbarView {
+    top: calc(100% - 5px) !important;
+    width: 100% !important;
+    background: #1f1f1f !important;
+    /*border-width: 0 1px 1px 1px !important; border-style: solid;*/
+ /*   border-color: transparent !important; */
+ #PersonalToolbar {
+  visibility: collapse !important;
+}
+
+#navigator-toolbox:hover > #PersonalToolbar {
+  visibility: visible !important;
+}
+#main-window {
+  min-width: 800px !important;
+}
+#page-wrap {
+  width: 80%;
+  margin: auto;
+}
+panelview,
+.panel-arrowcontent
+{
+-moz-appearance: none !important;  
+background-color: var(--background-bar) !important;
+color: var(--foreground) !important;}
+.vbox {
+  -moz-appearance: none !important;
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.panel-arrow {
+  fill: var(--background) !important;
+}
+/* Put the sound overlay up the icon */
+.tab-icon-sound:not([selected]) {
+  display: none;
+}
+
+/****REMOVAL OF ENTRIES FROM CONTEXT MENU******/
+#context-sep-sendpagetodevice, #context-sendpagetodevice, #context-sendlinktodevice, #contentAreaContextMenu > menuseparator:nth-child(92), #context_sendTabToDevice_separator, #context_sendTabToDevice+menuseparator {
+  display: none !important; }
+
+/*Remove from Hamburger Menu*/
+#appMenu-addons-button, toolbarseparator,
+#appMenu-fxa-status,
+#appMenu-options-button, #appMenu-whatsnew-button,
+#appMenu-open-file-button, #appMenu-more-button,
+#appMenu-save-file-button, #appMenu-print-button,
+#appMenu-find-button, #appMenu-customize-button {
+  display: none !important;
+}
+/*/*Remove from Hamburger Menu*
+#appMenu-new-window-button,
+#appMenu-private-window-button
+#appMenu-preferences-button
+  
+
+  
+/****THIS IS FOR HAMBURGER SUB MENU HIGHLIGHTING****/
+.subviewbutton:hover {
+  background-color: var(--accent-1) !important;
+}
+  
+/****THIS IS FOR HAMBURGER SUB MENU HIGHLIGHTING****/
+.subviewbutton:hover {
+  background-color: var(--accent) !important;
+}
+.scrollbutton-up, .scrollbutton-down {
+  display: none !important;
+}
+/***SIDEBAR****/
+#bookmarksPanel,
+#history-panel,
+#sidebar-header,
+#template-container {background-color: var(--background)!important;}

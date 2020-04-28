@@ -1,0 +1,2252 @@
+@import url("colors.css");
+
+
+
+#PanelUI-button { -moz-border-start: 0px !important;  border-image: none !important; }
+
+
+@-moz-document url("about:newtab"), url("about:home") {
+    body {
+        overflow: hidden !important;
+    }
+    #root {
+        background-image: url("wallpaper.png") !important;
+        background-size: cover !important;
+    }
+    /* Hide the ugly logo & wordmark sorry Mozilla */
+    .logo-and-wordmark {
+        visibility: hidden !important;
+    }
+    /* Make the search bar rounded */
+    #newtab-search-text,
+    #searchSubmit {
+		border-radius: 50px !important;
+	}
+	.search-wrapper .search-inner-wrapper {
+		margin: 10px !important; }
+	.search-wrapper{ padding-top: 9px !important}
+}
+
+
+@-moz-document domain("torrentday.com") {
+	html, body {
+	  background-color: var(--background) !important;
+	  background: var(--background) !important;
+	  color: var(--foreground) !important;
+	  width: 100% !important;
+	  height: 100% !important;
+	  min-width: 100px !important;
+		 }
+	
+	#navBarOuter {background-color: var(--background) !important;}
+	header#banner {
+		width:100% !important;
+		min-width: 300px !important;
+		background: var(--background) !important;
+	}
+	b {color: var(--norda-2) !important}
+	#pageWrapper{width: 100% !important;}
+	ul.menu
+	/*.menu > li*/ {
+		margin-left: 0px !important;
+		width: auto !important;
+		background: var(--background) !important;
+		color: var(--foreground) !important;}
+	#navBarInner {width: 100% !important}
+	#userBar, #userBarWrapper {width: auto !important; background: var(--background) !important;}
+	#uiSearch,
+	#uiSearch:after{
+		padding-left: 145px;
+		padding-right: 145px;
+		background: var(--background) !important;
+		color: var(--nordp-3) !important;
+		width: auto !important ;}
+	#catters {width: 100% !important}
+	table#torrentTable {width: 100% !important}
+	table#torrents.table {background: var(--background) !important}
+	#torrents table {background: var(--background) !important}
+	}
+@-moz-document domain("google.com"), domain("google.ca"), domain("news.ycombinator.com"), domain("https://news.google.com") {
+  html, body, #hdtb, #hdtbSum, #appbar, #hnmain, #gsr, #fbar, #before-appbar, #yDmH0d, #gb, .MQsxIb {
+	background-color: var(--background) !important;
+	color: var(--foreground) !important;
+
+  }
+  .rNl3nf {border-bottom: none !important;}
+  div.tzVsfd > .F9PbJd {background-color: var(--accent)!important;}
+  .WGvvNb {color: var(--nords-2)!important}
+  .fxgdke {color: var(--norda-2)!important;}
+  .jZWadf {background: var(--background-bar) !important;}
+  .aajZCb, .FoDaAb {background: var(--nordp-3) !important}
+  .sfbgg,
+  .minidiv .sfbg, .zWHNCf {
+	background-color: var(--background) !important;
+	color: var(--foreground) !important;
+  }
+  #hdtb, .NiLAwe { border:none !important}
+  /*.NiLAwe.mi8Lec.gAl5If.jVwmLb.Oc0wGc.R7GTQ.keNKEd.j7vNaf.nID9nc { border: none !important;}*/
+  span { color: var(--foreground) !important}
+  .zQTmif { background: var(--background) !important;}
+  .gb_Fb, .EHzcec { background: var(--nordf-2) !important;}
+  .gb_ub, .gb_yb, .gb_Eb, .gb_Ib, .gb_F {
+	background-color: var(--norda-2) !important;
+	border: none !important;
+ }
+  .gb_D { color: var(--nordf-2) !important;}
+  h2, .title, .sitebit.comhead{
+	color: var(--norda-0) !important} 
+  a.storylink {color: var(--nordf-3) !important;}
+  /*HIDES THE BAR AT THE BOTTOM Of THE SCREEN ie Country info etc */
+  #fbar { display: none !important;}
+  
+  
+  .g-blk,
+  .knowledge-panel,
+  .knowledge-finance-wholepage-chart__hover-card,
+  .vk_arc,
+  .mod table,
+  .mod table span,
+  .mod,
+  .vk_c,
+  .mnr-c,
+  g-scrolling-carousel,
+  #am-b1,
+  .ab_button,
+  .action-menu.ab_ctl,
+  span.uch-xa-tl,
+  .yvg0ob span,
+  .mWyH1d
+  {
+	  background: var(--background) !important;
+	  color: var(--foreground) !important;
+  }
+  /*google Stock*/
+  .QiGJYb.fw-ch-sel {color: var(--nordf-3) !important;} /*Days Months years*/
+  .NprOob {color: var(--norda-0);}
+  /*span.IsqQVc:nth-child(1) NprOob*/
+
+  /*Google Weather*/
+  .bDw0ac,
+  .LNrHIf .CHM9mc,
+  .giB63b .NwrYVd,
+  .giB63b .oWh3Ld {color: var(--norda-2) !important;}
+
+  /*In the new (under weather) */
+  .YDRMcc {background: var(--nordp-0) !important;}
+  h3, .y9oXvf  {color: var(--nords-2)!important}
+  h4 {color: var(--nords-1) !important}
+  .Xcw0p.ztUP4e {color: var(--nordp-3) !important}
+  .bkWMgd
+ /*GOOGLE IMAGES SEARCH BAR WITH DROPDOWN*/
+  .rllh__header-container div {
+	  background: #fff !important;
+  }
+  .vk_c .rllt__link:hover, .mod a div:hover {
+	  background-color: #728cbb !important;
+  }
+  /*ul[role=listbox] li[role=presentation],*/
+  ul[role=listbox] li[role=presentation]:hover {
+	  background-color: #728cbb !important;  
+  }
+  
+  #gsr, g-inner-card, .mod .dw-sb-cont {
+	  background: var(--background) !important;
+  } 
+  .hptl {
+	color: red !important;
+  }
+  .gstl_0.sbib_a,
+  #topbar,
+  #lst-ib,
+  #sfibbbc,
+  #sfdiv,
+  .mod input,
+  ul[role=listbox]
+  {
+	  background-color: var(nordp-0) !important; 
+	  color: #fff !important;
+  }
+  
+  .mod input, .mod .dw-sb-btn {
+	  background: var(--nordp-0)!important;
+	  border-color: var(--nordp-0) !important;
+  }
+  /*
+  #hdtbSum, .sfbgg, #fbar, .mod, .related-question-pair {
+	  background-color: #111111 !important;
+	  color: #ffffff !important;   
+  }  
+  */
+  .related-question-pair, .mod, .e2BEnf h3, .st, div[role=heading], .mnr-c div {
+	  color: var(--foreground) !important;
+  }
+  
+  #hdtb-msb {
+	  color: #fff;
+  }
+  a.fl { color: #bba172 !important;}
+  
+  .r a,
+  .s a,
+  .card-section a,
+  .match-mod-horizontal-padding a,
+  ul[role=listbox] li[role=presentation] a,
+  g-more-link a span
+  {
+	  color: #fff !important;
+  }
+  .TbwUpd {
+	color: green !important;
+  }
+  
+  .r a:visited,
+  .s a:visited,
+  .card-section a:visited,
+  .match-mod-horizontal-padding a:visited,
+  ul[role=listbox] li[role=presentation] .sbpqs_a,
+  g-more-link a span:visited
+  {
+	  color: #bba172 !important;    
+  }
+  
+ /* .st em {
+	  color: #fff !important;  */   
+  
+  
+  cite {
+	  color: #728cbb !important;
+  }
+  tr:nth-of-type(1) > td > table {
+	  background-color: var(--norda-3) !important;
+  }
+  
+  
+}
+
+@-moz-document domain("youtube.com") {
+	.html5-endscreen, .ytp-player-content, ytp.videowall-endscreen, .ytp-show-tiles,
+	ytd-comments,
+	#secondary,
+	#banner-spacer,
+	#banner,
+	#merch-shelf > .ytd-watch-flexy,
+	style-scope ytd-video-masthead-ad-primary-video-renderer,
+	style-scope ytd-banner-promo-renderer,
+	style-scope ytd-browse,
+	ytd-banner-promo-renderer-background style-scope ytd-banner-promo-renderer,
+	ytd-mini-guide-renderer,
+	ytp-show-tiles.videowall-endscreen ytp-player-content.html5-endscreen
+	#comments,
+	#masthead-ad,
+	ytd-guide-section-renderer.style-scope:nth-child(3) > div:nth-child(2) > ytd-guide-entry-renderer:nth-child(1) > a:nth-child(1),
+	ytd-guide-section-renderer.style-scope:nth-child(3) > div:nth-child(2) > ytd-guide-entry-renderer:nth-child(5) > a:nth-child(1),
+	ytd-guide-section-renderer.style-scope:nth-child(4) > div:nth-child(2) > ytd-guide-entry-renderer:nth-child(3) > a:nth-child(1),
+	ytd-guide-section-renderer.style-scope:nth-child(4) > div:nth-child(2) > ytd-guide-entry-renderer:nth-child(4) > a:nth-child(1)
+	 {
+	  display: none !important;
+	}
+
+  /*********Youtube Settings******/
+  :root
+	{
+	  --bg:  var(--background) !important;
+			/*  main background  */
+	  --bg2: var(--nordp-3) !important;
+			/*  side bar  */
+	  --bg3: var(--nordp-3) !important;
+			   /*  top bar  */
+	  --first-color: var(--nords-1) !important;
+			   /*  grey - main color  */
+	  --second-color: var(--nords-1) !important;
+		   /* green - alt text */
+	  --third-color: var(--norda-2) !important;
+			   /* Link Color  */
+	  --font1: "Open Sans", "Helvetica Neue" !important;
+				/* main font Set however you like */
+	  --font2: "Open Sans Bold", "Helvetica Neue" !important;
+	  /* today/channel font Set however you like*/;
+	}  
+	
+						 /* ------------------- options ----------------- */
+	
+	
+					 /* ----- remove play/pause button ----- */
+	.ytp-play-button
+	{
+	  display: initial !important;
+	/*none or initial */;
+	}    
+	
+		  /* hide upload button */
+  
+	ytd-button-renderer.ytd-masthead > a:nth-child(1) > yt-icon-button:nth-child(1) > button:nth-child(1) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1)
+	{
+	  display: none !important;
+	/*none or initial */;
+	}
+  
+		  /* hide yt apps button */
+  
+	yt-icon.ytd-topbar-menu-button-renderer > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1)
+	{
+	  display: none !important;
+	/*none or initial */;
+	}
+  
+					/* ------------------- basic colors ----------------- */
+	
+	
+										/* main bg */
+	
+	body,
+	html,
+	#page-manager.ytd-app,
+	#notification-count.ytd-notification-topbar-button-renderer,
+	.yt-uix-button-menu .yt-uix-button-menu-item:hover,
+	.guide-item:hover,
+	paper-icon-item:hover,
+	ytd-popup-container,
+	.badge.ytd-badge-supported-renderer,
+	div.ytp-popup:nth-child(24),
+	.description.ytd-video-secondary-info-renderer yt-formatted-string.ytd-video-secondary-info-renderer,
+	paper-button.ytd-expander,
+	ytd-app,
+	#yt-masthead-user .sb-notif-on .yt-uix-button-content,
+	.yt-uix-button.yt-uix-button-subscribe-branded,
+	.yt-uix-button.yt-uix-button-subscribed-branded,
+	#toggle.ytd-grid-renderer,
+	ytd-page-manager > .ytd-page-manager,
+	#sentiment.ytd-video-primary-info-renderer,
+	ytd-playlist-sidebar-renderer,
+	ytd-playlist-video-renderer,
+	ytd-browse.style-scope:nth-child(4) > ytd-two-column-browse-results-renderer:nth-child(7) > ytd-section-list-renderer:nth-child(1) > div:nth-child(3),
+	div.ytd-section-list-renderer,
+	#primary
+	{
+	  background: var(--bg) !important;
+	} 
+	  
+										   /* alt bg  */
+	
+	#items.yt-multi-page-menu-section-renderer > .yt-multi-page-menu-section-renderer,
+	ytd-menu-service-item-renderer:hover,
+	body #footer-container,
+	ytd-guide-renderer,
+	#channel-header.ytd-c4-tabbed-header-renderer,
+	paper-item:hover,
+	ytd-confirm-dialog-renderer[dialog][dialog][dialog],
+	paper-button,
+	#header.ytd-app,
+	#banner.ytd-playlist-header-renderer,
+	#content.ytd-playlist-video-renderer:hover,
+	#creator-sidebar > #creator-sidebar-section-id-dashboard.selected > h3 a,
+	#creator-sidebar > #creator-sidebar-section-id-your-contributions.selected > h3 a,
+	.yt-uix-button-dark,
+	#creator-sidebar .creator-sidebar-section a:hover,
+	#non-appbar-vm-video-actions-bar .vm-video-actions-inner,
+	#creator-sidebar .creator-sidebar-item.selected,
+	#creator-sidebar .creator-sidebar-submenu .creator-sidebar-item.selected a:hover,
+	#creator-sidebar .creator-sidebar-submenu a.creator-sidebar-section-link.selected,
+	#creator-sidebar .creator-sidebar-single-section.selected a,
+	#creator-sidebar .creator-sidebar-single-section.selected a:hover,
+	#yt-masthead-notifications-content .item-section > li > .yt-lockup-tile:hover,
+	#yt-masthead-notifications-content .yt-lockup-tile:hover .yt-ui-ellipsis,
+	.tabbed-page .tab.active,
+	.tabbed-page .tab,
+	.video-dds .topline,
+	.comments .mod-buttonbar .mod-button-content,
+	.yt-masthead-account-picker-option:hover,
+	.yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-picker-header,
+	.yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-multilogin-users-header,
+	#appbar-nav,
+	.yt-uix-form-input-fluid .yt-uix-form-input-text,
+	.yt-uix-form-input-fluid .yt-uix-form-input-textarea,
+	.yt-subscription-button-subscriber-count-branded-horizontal,
+	.yt-subscription-button-subscriber-count-unbranded-horizontal,
+	.yt-uix-button-subscribe-unbranded,
+	.yt-uix-button-subscribe-unbranded[disabled],
+	.yt-uix-button-subscribe-unbranded[disabled]:hover,
+	.yt-uix-button-subscribe-unbranded[disabled]:active,
+	.yt-uix-button-subscribe-unbranded[disabled]:focus,
+	.ytd-button-renderer-3 a.ytd-button-renderer[is="yt-endpoint"],
+	paper-listbox,
+	.pl-video:hover,
+	.pl-video-list-editable .pl-video:hover .pl-video-handle,
+	.yt-uix-dragdrop-cursor-follower .pl-video-handle,
+	.channel-header .secondary-header-contents,
+	ytd-active-account-header-renderer
+	{
+	  background: var(--bg2) !important;
+	}  
+	
+	
+									   /* header and search  */
+	div.ytd-searchbox,
+	.gsfs,
+	.sbsb_a,
+	.sbfl_b
+	{
+		background: var(--background) !important;
+	}
+	
+	#container.ytd-masthead,
+	paper-toast.ytd-notification-action-renderer,
+	ytd-simple-menu-header-renderer,
+	#items.yt-multi-page-menu-section-renderer > .yt-multi-page-menu-section-renderer:hover,
+	paper-menu,
+	.yt-card,
+	.yt-uix-button-menu,
+	#yt-masthead-container,
+	#masthead-search-terms input,
+	#guide-container,
+	#endpoint.ytd-guide-entry-renderer:hover,
+	#sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer,
+	paper-item.ytd-account-settings,
+	paper-item.ytd-compact-link-renderer,
+	#tabs-inner-container.ytd-c4-tabbed-header-renderer,
+	.buttons.ytd-confirm-dialog-renderer,
+	.ytp-play-progress,
+	.ytp-scrubber-button,
+	.ytp-chrome-controls .ytp-button[aria-pressed]::after,
+	.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox,
+	#edit-buttons.ytd-c4-tabbed-header-renderer ytd-button-renderer.ytd-c4-tabbed-header-renderer,
+	ytd-sentiment-bar-renderer,
+	.header.ytd-playlist-panel-renderer,
+	ytd-playlist-panel-video-renderer,
+	.playlist-items.ytd-playlist-panel-renderer,
+	ytd-button-renderer.style-text[is-icon-button],
+	ytd-button-renderer.style-default[is-icon-button],
+	ytd-button-renderer.style-opacity[is-icon-button],
+	.dashboard-widget-padded-content,
+	.dashboard-widget-header,
+	.analytics-sparkline-card,
+	.dashboard-widget-footer .dashboard-widget-view-all-link,
+	#vm-pagination,
+	#yt-masthead-notifications-content .item-section > li > .yt-lockup-tile,
+	#yt-masthead-notifications-content .yt-ui-ellipsis,
+	#yt-masthead-notifications-header,
+	.yt-masthead-picker-footer,
+	.yt-masthead-account-picker-option,
+	.yt-masthead-picker-body,
+	.yt-masthead-account-picker.yt-uix-clickcard-card-content,
+	#buttons.ytd-dismissal-follow-up-renderer,
+	ytd-dismissal-follow-up-renderer[dialog][dialog][dialog],
+	.yt-live-chat-message-input-renderer-0,
+	.yt-live-chat-item-list-renderer-1 #item-scroller.animated.yt-live-chat-item-list-renderer #items.yt-live-chat-item-list-renderer,
+	.yt-live-chat-renderer-0 yt-live-chat-header-renderer.yt-live-chat-renderer,
+	#header.ytd-add-to-playlist-renderer,
+	#playlists.ytd-add-to-playlist-renderer,
+	#actions.ytd-add-to-playlist-create-renderer,
+	ytd-dropdown-renderer,
+	ytd-text-input-form-field-renderer,
+	#create-playlist-form.ytd-add-to-playlist-create-renderer,
+	#actions-wrapper.ytd-sharing-renderer,
+	#share-label.ytd-sharing-renderer,
+	#share-target-wrapper.ytd-sharing-renderer,
+	#start-at-wrapper.ytd-sharing-renderer,
+	#share-url.ytd-sharing-renderer,
+	ytd-sharing-renderer,
+	ytd-thumbnail-overlay-resume-playback-renderer,
+	.webkit .yt-,
+	#yt-picker-country-footer,
+	#yt-picker-language-footer,
+	#yt-picker-safetymode-footer,
+	#yt-masthead-notifications-content,
+	.menu-container.ytd-multi-page-menu-renderer,
+	#author-comment-badge > ytd-author-comment-badge-renderer,
+	ytd-red-carpet-shelf-renderer,
+	ytd-red-carpet-horizontal-list-renderer,
+	a.ytd-red-carpet-video-renderer,
+	ytd-red-carpet-video-renderer,
+	ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
+	yt-notification-action-renderer.style-scope:nth-child(2) > paper-toast,
+	#watch-card-header.ytd-generic-watch-card
+	{
+	  background: var(--bg3) !important;
+	}  
+	
+									 /* selected tab */
+	
+	#selectionBar.paper-tabs,
+	.toggle-button.paper-toggle-button,
+	paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button,
+	.ytp-hover-progress,
+	#like-bar.ytd-sentiment-bar-renderer,
+	.yt-lockup-notification .unread-dot
+	{
+	  background: var(--third-color) !important;
+	}   
+	
+									  /* playlist panel  */
+	ytd-thumbnail-overlay-side-panel-renderer
+	{
+	  background: var(--bg3) !important;
+	  opacity: 0.8 !important;
+	}   
+	  
+										/* main text */
+	#text.ytd-channel-name {
+		color: var(--nordp-3)
+	}
+	body,
+	p,
+	span,
+	a:hover,
+	#subtitle.ytd-shelf-renderer,
+	h2.ytd-simple-menu-header-renderer,
+	yt-formatted-string.ytd-menu-service-item-renderer,
+	.upload-other-options-list .upload-option-text,
+	.yt-uix-button-default,
+	.yt-uix-button-menu .yt-uix-button-menu-item,
+	paper-item.ytd-compact-link-renderer,
+	#message.ytd-message-renderer,
+	.tab-content.paper-tab,
+	#label.yt-dropdown-menu,
+	#icon-label.yt-dropdown-menu,
+	#title.ytd-confirm-dialog-renderer,
+	#scroller.ytd-confirm-dialog-renderer,
+	#description.ytd-channel-about-metadata-renderer,
+	#right-column.ytd-channel-about-metadata-renderer > yt-formatted-string.ytd-channel-about-metadata-renderer,
+	#content-text.ytd-comment-renderer,
+	#simplebox-placeholder.ytd-comment-simplebox-renderer,
+	.content.ytd-video-secondary-info-renderer,
+	#upnext.ytd-compact-autoplay-renderer,
+	.html5-video-player a,
+	yt-formatted-string[split-lines],
+	.content.ytd-metadata-row-renderer,
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox input.ytd-searchbox,
+	#info.ytd-playlist-header-renderer,
+	.yt-alert-naked .yt-alert-content,
+	.yt-gb-shelf .yt-gb-shelf-paddle,
+	.floated-label-placeholder.paper-input-container,
+	.floated-label-placeholder.paper-input-container,
+	.floated-label-placeholder.paper-input-container,
+	#description.ytd-privacy-dropdown-item-renderer,
+	:not([style-scope]):not(.style-scope),
+	#email.ytd-active-account-header-renderer,
+	#account-name.ytd-active-account-header-renderer,
+	#stats.ytd-playlist-sidebar-primary-info-renderer,
+	.title.ytd-purchase-item-renderer,
+	.price-text.ytd-purchase-item-renderer,
+	.text.ytd-simple-text-section-renderer,
+	.video-title.ytd-watch-card-video-list-renderer,
+	#description.ytd-channel-renderer,
+	.related-entity-title.ytd-generic-watch-card,
+	.title.ytd-guide-entry-renderer
+	{
+	  color: var(--foreground) !important;
+	}  
+	/**youtube macOS messed up color***/
+	#video-title.ytd-rich-grid-video-renderer{
+		color: var(--nordf-4) !important;
+	}
+	ytd-button-renderer.style-default[is-icon-button] #text.ytd-button-renderer {
+		color: var(--nordf-3) !important;
+	}
+	#search-icon-legacy.ytd-searchbox{
+		background-color: var(--background)!important;
+		border:  var(--ytd-searchbox-legacy-border-color)
+	}
+	
+											/* alt text */
+	
+	#metadata-line.ytd-video-meta-block span.ytd-video-meta-block,
+	.message.ytd-notification-renderer,
+	.upload-other-options-list .upload-option-button,
+	.upload-sidebar-header,
+	#channel-title.ytd-account-item-renderer,
+	.item.yt-dropdown-menu,
+	#channel-title.ytd-c4-tabbed-header-renderer,
+	.deemphasize.yt-formatted-string,
+	.count-text.ytd-comments-header-renderer,
+	.title.ytd-video-primary-info-renderer,
+	.date.ytd-video-secondary-info-renderer,
+	paper-button,
+	ytd-pinned-comment-badge-renderer,
+	#result-count.ytd-search-sub-menu-renderer,
+	h1,
+	.yt-masthead-account-picker-option .yt-masthead-picker-name,
+	.yt-masthead-picker-name,
+	#checkboxLabel.paper-checkbox,
+	#label.ytd-playlist-add-to-option-renderer,
+	#related-header.ytd-generic-watch-card,
+	.input-content.paper-input-container input,
+	#label.ytd-privacy-dropdown-item-renderer,
+	#share-label.ytd-sharing-renderer,
+	yt-formatted-string.ytd-sharing-renderer,
+	#toggle.ytd-grid-renderer:hover,
+	#video-title.ytd-child-video-renderer,
+	#length.ytd-child-video-renderer
+	{
+	  color: var(--second-color) !important;
+	}  
+	
+										   /* links */
+	
+	a,
+	a:visited,
+	#toggle.ytd-grid-renderer,
+	#footer .yt-uix-button-group .yt-uix-button,
+	#footer #google-help .yt-uix-button-content,
+	#subscriber-count.ytd-c4-tabbed-header-renderer,
+	#video-title.ytd-newspaper-hero-video-renderer,
+	paper-button.ytd-subscribe-button-renderer[subscribed] yt-formatted-string.ytd-subscribe-button-renderer,
+	#video-title.ytd-newspaper-mini-video-renderer,
+	#video-title.ytd-grid-video-renderer,
+	.subheadline.ytd-channel-about-metadata-renderer,
+	#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer,
+	.more-button.ytd-video-secondary-info-renderer,
+	.less-button.ytd-video-secondary-info-renderer,
+	yt-formatted-string.yt-view-count-renderer,
+	#byline.ytd-video-meta-block,
+	h2,
+	#title.ytd-dismissal-follow-up-renderer,
+	#header.ytd-add-to-playlist-renderer
+	{
+	  color: var(--third-color) !important;
+	}    
+	
+	
+						 /* ------------------- icons ------------------- */
+	
+	
+	
+	
+	ytd-button-renderer #button.ytd-button-renderer,
+	ytd-notification-topbar-button-renderer #button.ytd-notification-topbar-button-renderer,
+	button.ytd-topbar-logo-renderer[is="paper-icon-button-light"],
+	#text.ytd-notification-multi-action-renderer,
+	.yt-live-chat-text-input-field-renderer-0 #input.yt-live-chat-text-input-field-renderer,
+	.yt-live-chat-text-input-field-renderer-0 #label.yt-live-chat-text-input-field-renderer,
+	#label.ytd-toggle-theme-compact-link-renderer,
+	.description.ytd-toggle-item-renderer,
+	.style-scope yt-icon
+	{
+	  color: var(--first-color) !important;
+	}
+  
+	
+	yt-icon,
+	#guide-icon.ytd-topbar-logo-renderer,
+	#logo-icon.ytd-topbar-logo-renderer #you-path,
+	#logo-icon.ytd-topbar-logo-renderer #tube-paths,
+	#logo-red-icon.ytd-topbar-logo-renderer #youtube-red-paths path,
+	.style-scope yt-icon
+	{
+	  fill: var(--first-color) !important;
+	}
+  
+	
+	.yt-uix-button-icon-material-upload,
+	#yt-masthead-user .yt-uix-button-icon-bell,
+	#yt-masthead #logo-container .logo,
+	#creator-sidebar .studio-icon.creator-sidebar-live-streaming,
+	.comments .mod-button .default-state,
+	.yt-uix-button-icon-icon-account-settings,
+	.yt-uix-subscription-preferences-button::before,
+	.yt-uix-button-icon-opml-export,
+	.yt-help-icon,
+	.yt-live-chat-icon-toggle-button-renderer-0 paper-icon-button.yt-live-chat-icon-toggle-button-renderer
+	{
+	  filter: invert(100%) !important;
+	}
+  
+	
+	#yt-masthead #logo-container .logo,
+	#creator-sidebar .studio-icon.creator-sidebar-dashboard.selected,
+	#creator-sidebar a:hover .studio-icon.creator-sidebar-dashboard.selected
+	{
+	  filter: grayscale(100%) !important;
+	}  
+  
+  
+	  /* logo */
+  
+	#logo.ytd-topbar-logo-renderer, ytd-yoodle-renderer.ytd-topbar-logo-renderer
+	{
+	  background: url("https://i.imgur.com/ku23Fyg.png") no-repeat;
+	  opacity: 0.8;
+	  width: 48px !important;
+	  height: 48px !important;
+  /*     margin-top: 1px; ; */
+	}
+  
+	#logo-icon-container.ytd-topbar-logo-renderer, #logo-red-icon-container.ytd-topbar-logo-renderer, #country-code.ytd-topbar-logo-renderer
+	{
+		display: none !important;
+	  /*opacity: 0;*/
+	}
+  
+							  /* --------------- search ------------------ */
+	
+	
+	
+	ytd-searchbox[mode="legacy"] #search-form.ytd-searchbox,
+	ytd-searchbox[mode="blue"] #search-form.ytd-searchbox,
+	#masthead-search
+	{
+	  margin: 0 auto !important;
+	}
+  
+	
+	ytd-searchbox[mode="legacy"] #search-form.ytd-searchbox,
+	ytd-searchbox[mode="blue"] #search-form.ytd-searchbox
+	{
+	  max-width: 150px !important;
+	  transition: ease-in-out .4s !important;
+	}
+  
+	
+	ytd-searchbox[mode="legacy"] #search-form.ytd-searchbox:hover,
+	ytd-searchbox[mode="blue"] #search-form.ytd-searchbox:focus
+	{
+	  max-width: 500px !important;
+	}
+	
+	
+  /* time */  
+	ytd-thumbnail-overlay-time-status-renderer[overlay-style="DEFAULT"], ytd-thumbnail-overlay-time-status-renderer
+	{
+	  width: 100% !important;
+	  margin: 0 auto !important;
+	  text-align: center !important;
+	  background: var(--bg3) !important;
+	  opacity: 0.6 !important;
+	  padding: 5px !important;
+	}
+  
+	span.style-scope.ytd-thumbnail-overlay-time-status-renderer
+	{
+	  margin: 0 auto !important;
+	  color: var(--first-color) !important;
+	}
+	
+  /* watched */
+	ytd-thumbnail-overlay-playback-status-renderer
+	{
+	  width: 100% !important;
+	  top: 0 !important;
+	  background: var(--bg3) !important;
+	  opacity: 0.7 !important;
+	  max-height: 20px !important;
+	}
+  
+	yt-formatted-string.ytd-thumbnail-overlay-playback-status-renderer
+	{
+	  font-size: 0px !important;
+	  margin: 0 auto !important;
+	}
+  
+	yt-formatted-string.ytd-thumbnail-overlay-playback-status-renderer::after
+	{
+	  content: "Watched" !important;
+	  font-size: 13px !important;
+	}
+  
+	#progress.ytd-thumbnail-overlay-resume-playback-renderer
+	{
+	  background: var(--second-color) !important;
+	}  
+	
+	
+					   /* ------------- section headers --------------- */
+	
+	
+	#title.ytd-shelf-renderer
+	{
+	  font-family: var(--font2) !important;
+	  color: var(--second-color) !important;
+	  font-size: 18px !important;
+	  margin: 0 auto !important;
+	  text-align: center !important;
+	}  
+	
+	
+							 /* ------------- buttons etc ------------- */
+	
+	
+	ytd-button-renderer #button.ytd-button-renderer,
+	paper-button.ytd-subscribe-button-renderer,
+	.upload-other-options-list .upload-option-button,
+	.yt-uix-button-default,
+	ytd-button-renderer.style-primary[is-paper-button]
+	{
+	  background: var(--bg3) !important;
+	}    
+	
+	
+					  /* ------------------- remove shit ------------------- */
+	
+   
+	
+							   /* remove borders */
+	
+	
+	#contents.ytd-section-list-renderer > .ytd-section-list-renderer:not(:last-child),
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox,
+	ytd-searchbox[mode="legacy"] #search-icon-legacy.ytd-searchbox,
+	ytd-notification-renderer,
+	.upload-other-options-list .upload-option-button,
+	body #footer-container,
+	#footer-main,
+	.yt-uix-button-default,
+	.yt-uix-button-menu,
+	#yt-masthead-container,
+	#masthead-search-terms,
+	.guide-section-separator,
+	#sections.ytd-guide-renderer > .ytd-guide-renderer:not(:last-child),
+	#footer.ytd-guide-renderer #guide-links-primary,
+	#sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer:not(:last-child),
+	#footer.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer,
+	.buttons.ytd-confirm-dialog-renderer,
+	#description-container.ytd-channel-about-metadata-renderer,
+	#details-container.ytd-channel-about-metadata-renderer,
+	#links-container.ytd-channel-about-metadata-renderer,
+	#right-column.ytd-channel-about-metadata-renderer > yt-formatted-string.ytd-channel-about-metadata-renderer,
+	#simplebox-placeholder.ytd-comment-simplebox-renderer,
+	ytd-video-secondary-info-renderer,
+	ytd-video-primary-info-renderer,
+	ytd-compact-autoplay-renderer,
+	#header.ytd-app,
+	ytd-search-sub-menu-renderer,
+	#content.ytd-playlist-video-renderer,
+	.dashboard-widget:hover .dashboard-widget-display-title,
+	.dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-display-title,
+	.dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-display-title,
+	.dashboard-widget-header:hover .dashboard-widget-overlay-icon,
+	.dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header .dashboard-widget-header-controls,
+	.dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header .dashboard-widget-header-controls,
+	.dashboard-widget-header:hover,
+	.dashboard-widget .dashboard-widget-config .dashboard-widget-header,
+	.dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header,
+	.dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header,
+	#dashboard-header-stats li,
+	#creator-sidebar-separator,
+	#yt-masthead-user .sb-notif-on .yt-uix-button-content,
+	#non-appbar-vm-video-actions-bar .vm-video-actions-inner,
+	#vm-myvideos-search-box,
+	#vm-playlists-search-box,
+	#vm-tags-search-box,
+	.yt-uix-clickcard-card-border,
+	.yt-uix-hovercard-card-border,
+	.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical,
+	.yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,
+	.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,
+	.yt-uix-hovercard-card-reverse .yt-uix-card-border-arrow-vertical,
+	.tabbed-page .tab.active,
+	.tabbed-page .tab,
+	.tabbed-page .tabs-area,
+	.tabbed-page .tabs-wrapper,
+	.commenthub .ytch-search-container,
+	.commenthub .comment-search,
+	.tabbed-page .options-bar,
+	.video-dds,
+	.comments .mod-buttonbar .mod-button,
+	.yt-uix-button.yt-uix-button-subscribe-branded,
+	.yt-uix-button.yt-uix-button-subscribed-branded,
+	#masthead-appbar,
+	.subscription-table-header,
+	.subscriptions-filter .filter-field-container,
+	.epic-nav-item-heading,
+	.yt-gb-shelf-main-content,
+	.yt-gb-shelf .yt-gb-shelf-paddle,
+	.yt-subscription-button-subscriber-count-branded-horizontal,
+	.yt-subscription-button-subscriber-count-unbranded-horizontal,
+	.yt-uix-button-subscribe-unbranded,
+	.yt-uix-button-subscribe-unbranded[disabled],
+	.yt-uix-button-subscribe-unbranded[disabled]:hover,
+	.yt-uix-button-subscribe-unbranded[disabled]:active,
+	.yt-uix-button-subscribe-unbranded[disabled]:focus,
+	.yt-uix-form-input-select,
+	.yt-uix-form-input-text,
+	.yt-uix-form-input-textarea,
+	.guide-pinned .guide-pinning-enabled #appbar-guide-menu,
+	ytd-grid-video-renderer[is-dismissed] #dismissed.ytd-grid-video-renderer,
+	ytd-dismissal-follow-up-renderer.style-scope > div:nth-child(2),
+	#playlists.ytd-add-to-playlist-renderer,
+	#header.ytd-add-to-playlist-renderer,
+	#share-target-wrapper.ytd-sharing-renderer,
+	#start-at-wrapper.ytd-sharing-renderer,
+	#watch8-action-buttons,
+	.yt-uix-button,
+	.yt-card .yt-uix-button-expander,
+	.yt-badge,
+	#watch7-sidebar .watch-sidebar-separation-line,
+	#browse-items-primary .item-section>li>.yt-lockup-tile,
+	.branded-page-v2-primary-col .branded-page-box,
+	.section-list li .item-section .branded-page-box,
+	.branded-page-v2-primary-col .branded-page-box:last-child.video-player-view-component,
+	.branded-page-v2-primary-col .branded-page-box:last-child.c4-featured-content,
+	.branded-page-v2-primary-col .branded-page-box:last-child.c4-featured-content-editor,
+	.branded-page-v2-primary-col .branded-page-box:last-child.welcome,
+	.branded-page-v2-subnav-container,
+	.pl-video,
+	.pl-video-list-editable .pl-video:hover .pl-video-handle,
+	.yt-uix-dragdrop-cursor-follower .pl-video-handle,
+	tr.pl-video,
+	.yt-picker-header,
+	#safety-form p.safety-submit,
+	#c4-header-bg-container,
+	.channel-header .secondary-header-contents,
+	#placeholder-underline.ytd-comment-simplebox-renderer,
+	.comment-simplebox-renderer-collapsed-content,
+	#placeholder-area.ytd-comment-simplebox-renderer,
+	#items.ytd-playlist-sidebar-renderer > .ytd-playlist-sidebar-renderer:not(:last-child),
+	#selectionBar.paper-tabs,
+	.video-row.ytd-watch-card-video-list-renderer,
+	paper-tabs.ytd-generic-watch-card,
+	ytd-shelf-renderer.style-scope
+	{
+	  border: none !important;
+	}  
+	
+							  /* remove shadows */
+	
+	
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox,
+	ytd-searchbox[mode="legacy"] #search-icon-legacy.ytd-searchbox,
+	.subscriptions-filter .filter-field-container,
+	.yt-gb-shelf-main-content,
+	.yt-gb-shelf .yt-gb-shelf-paddle:hover,
+	tr.pl-video,
+	.yt-uix-button-default.yt-uix-button-toggled
+  
+	{
+	  box-shadow: none !important;
+	}
+	#endpoint.ytd-guide-entry-renderer-scope.ytd-guide-entry-renderer
+	title YouTube.Premium {display: none !important}
+	
+	#dashboard-header .dashboard-stat-name,
+	#dashboard-header .add-widget-button-label,
+	#dashboard-header h3,
+	a,
+	#dashboard-header .dashboard-stat-value
+  
+	{
+	  text-shadow: none !important;
+	}  
+	
+							   /* remove white bgs */
+	
+	#footer.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer
+	{
+	  padding: 0px !important;
+	}
+  
+	ytd-multi-page-menu-renderer[menu-style="multi-page-menu-style-type-notifications"] #container.ytd-multi-page-menu-renderer:not(:hover)
+	{
+	  margin: 0 !important;
+	}  
+	
+								   /* remove part of the footer */
+	
+	
+	#footer-links,
+	#footer .yt-uix-button-icon-footer-language,
+	#footer .yt-uix-button-icon-footer-history,
+	#footer .yt-uix-button-icon-questionmark,
+	#footer-logo .footer-logo-icon,
+	#primary-links.ytd-c4-tabbed-header-renderer yt-formatted-string.ytd-c4-tabbed-header-renderer,
+	.unfocused-line.paper-input-container,
+	.focused-line.paper-input-container,
+	#guide-links-primary,
+	#guide-links-secondary,
+	#copyright
+	{
+	  display: none !important;
+	}
+  
+	body #footer-container, #footer-main
+	{
+	  margin: 0 auto !important;
+	  text-align: center !important;
+	}  
+	
+									  /* remove bgs */  
+	
+	#primary-links.ytd-c4-tabbed-header-renderer,
+	#secondary-links.ytd-c4-tabbed-header-renderer,
+	ytd-button-renderer #button.ytd-button-renderer,
+	.ytp-load-progress,
+	.channel-owner.ytd-comment-renderer,
+	yt-formatted-string.ytd-thumbnail-overlay-playback-status-renderer,
+	.watch-stage-mode #theater-background
+  
+	{
+	  background: transparent !important;
+	} 
+	
+	
+						   /* fullscreen */
+	
+  
+	.ytp-big-mode .ytp-chrome-top .ytp-chrome-top-buttons .ytp-watch-later-button,
+	.ytp-chrome-top .ytp-chrome-top-buttons .ytp-watch-later-button,
+	.ytp-big-mode .ytp-chrome-top .ytp-chrome-top-buttons .ytp-share-button,
+	.ytp-chrome-top .ytp-chrome-top-buttons .ytp-share-button,
+	.ytp-next-button,
+	.ytp-youtube-button,
+	.ytp-expand,
+	.ytp-pause-overlay,
+	.ytp-title-link
+	{
+	  display: none !important;
+	}
+  
+	.ytp-cards-button
+	{
+	  opacity: 0 !important;
+	}
+  
+	.ytp-cards-button:hover
+	{
+	  opacity: 1 !important;
+	}
+	.count-text.ytd-comments-header-renderer
+	{
+	  display: none !important;
+	}
+/****Increase Video Size***/
+		/**Default View**
+	.video-stream {
+		width: 1377.77px !important;
+		height: 784.983px !important;
+		left: 0px !important;
+		top: 0px !important;
+		bottom: 0px !important;
+   }
+	.html5-video-container {
+		height: 784.983px !important;
+   }
+	.ytp-chrome-controls {
+		width: 1340px !important;
+   }
+	.ytp-progress-bar-container {
+		height: 5px !important;
+		width: 1340px !important;
+   }
+
+/****resized browser*****/
+
+
+/*.html5-video-player {
+	position:relative !important;
+	width:100%!important;
+	height:100%!important;
+	overflow:hidden!important;
+	z-index:0;
+	outline:0;
+	font-family:"YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+	color:#eee;
+	text-align:left;
+	direction:ltr;
+	font-size:11px;
+	line-height:1.3;
+	-webkit-font-smoothing:antialiased;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	touch-action:manipulation;
+	-ms-high-contrast-adjust:none
+   }
+ytd-watch-flexy:not([theater]):not([fullscreen]) #primary.ytd-watch-flexy,
+ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy {
+ padding-top:0px!important;
+}
+ytd-watch-flexy[flexy_] #primary.ytd-watch-flexy {
+	margin-left:0px!important;
+	min-width:var(--ytd-watch-flexy-min-player-width);
+	-ms-flex:1 1 0.000000001px!important;
+	-webkit-flex:1!important;
+	flex:1!important;
+	-webkit-flex-basis:0.000000001px!important;
+	flex-basis:0.000000001px!important;
+	-ms-flex:0 1 100%!important;
+   }
+   
+#primary.ytd-watch-flexy {
+	padding-right:0px!important;
+   }
+ytd-watch-flexy[flexy_]:not([is-vertical-video_]) #player-container-inner.ytd-watch-flexy {
+	position:relative!important;
+   }
+   ytd-player,
+#container.ytd-player {
+ 	display:block!important;
+ 	width:1680px!important;
+ 	height:1107px!important;
+}
+#columns.ytd-watch-flexy {
+	 margin:0 auto; *//*! display:flex; -ms-flex-direction:row;
+	-webkit-flex-direction:row!important;
+	flex-direction:row!important;
+   }
+.video-stream {
+	width: 1680px!important;
+	height: 1107px!important;
+	left: 0px;
+	top: -50px!important;
+   }
+.html5-video-container {
+	right: 0px!important;
+	width: 1680px!important;
+	height: 1107px!important;
+	left: 0px!important;
+   }
+#movie_player {
+	width: 1680px!important;
+	height: 1107px!important;
+	right: 0px!important;
+	left: 0px!important;
+   }
+#player-container-inner > div:nth-child(1) {
+	width: 1680px!important;
+	height: 1107px!important;
+	right: 0px!important;
+	left: 0px!important;
+   }
+#player-container-inner {
+	height: 1107px!important;
+	width: 1680px!important;
+	padding-top: 550px!important;
+	left: 0px;
+   }
+#columns {
+	height: 1107px!important;
+	margin-left: 0px!important;
+	margin-right: 0px!important;
+   }
+#columns > div:nth-child(1) {
+	width: 1680px!important;
+	margin-left: 0px!important;
+	padding-right: 0px!important;
+	padding-top: 0px!important;
+   }
+/*.controlsOverlay {
+	height: 1107px; 
+   }
+.ytp-chrome-controls {
+	width: 1680px!important;
+	border-top-style: solid!important;
+	border-top-width: 0px!important;
+	margin-top: -150px!important;
+   }
+   
+*/ }
+
+
+
+	*, 
+	*:before, 
+	*:after 
+	{
+		scrollbar-width: none !important;
+	}
+
+
+
+
+
+
+
+/*@-moz-document url(about:preferences), url-prefix(about:){
+	html, body,
+	#preferences-stack, vbox.navigation,
+	 hbox.sticky-container,
+	  vbox.dialogBox, vbox.box-inherit dialog-content-box
+		{
+		background: var(--background)!important;
+		background-color: var(--background) !important;
+		color: var(--foreground) !important;
+		}
+	body {background: var(--background) !important}
+}*/
+
+
+
+
+@-moz-document url-prefix(chrome://) {
+	#ColorsDialogPane,
+	#ConnectionsDialogPane,
+	#FontsDialogPane,
+	#LanguagesDialogPane,
+	.windowDialog,
+	dialog,
+	prefpane,
+	prefpane > .content-box,
+	prefwindow,
+	window {
+		background-color: var(--background)!important;
+		color: var(--foreground)!important   }
+	#cookieInfoGrid .textbox-input {
+		background-color: var(--background)!important}   
+	#historyItems {
+		-moz-appearance: none!important} 
+}
+@-moz-document regexp("^moz-extension://.*manifest.json$") {
+	html {
+		background: var(--background)!important;
+		color: var(--background)!important} }
+
+
+@-moz-document url-prefix(about:memory) {
+	html {
+		background: var(--background)!important;
+		color: var(--foreground) !important;
+		}
+	.legend,
+	.opsRowLabel,
+	.section,
+	.treeline {
+		color: var(--foreground)!important
+		}
+}
+@-moz-document url-prefix(about:webrtc) {
+	html {
+		background-color: var(--background)!important;
+		color: var(--foreground)!important
+		}
+	#content > div,
+	.peer-connection > h3 {
+		background-color: var(--background)!important
+		}
+	.fold-trigger {
+		color: var(--foregrond)!important
+		}
+	table {
+		color: var(--foreground)!important;
+		background-color: var(--background)!important
+		}
+	.peer-connection table tr {
+		background-color: var(--background)!important
+		}
+	.trickled {
+		background-color: var(--background)!important;
+		color: var(--foreground)!important
+		}
+	.peer-connection table tr:first-of-type {
+		background-color: var(--background)!important;
+		color: var(--foreground)!important
+		}
+	}
+@-moz-document url-prefix(chrome://) {
+	#ColorsDialogPane,
+	#ConnectionsDialogPane,
+	#FontsDialogPane,
+	#LanguagesDialogPane,
+	.windowDialog,
+	dialog,
+	prefpane,
+	prefpane > .content-box,
+	prefwindow {
+		background-color: var(--background)!important;
+		color: var(--foreground)!important
+		}
+	#cookieInfoGrid .textbox-input {
+		background-color: var(--background)!important
+		}
+	#historyItems {
+		-moz-appearance: none!important
+		}
+}
+
+@-moz-document url-prefix("https://addons.mozilla.org") {
+	.Page-content,
+	.Footer,
+	.Footer-wrapper,
+	.LanguageTools-header-row,
+	.amo {
+		background: var(--background)!important
+		}
+	h1,
+	h2 {
+		color: var(--foreground)!important
+		}
+	.SearchResult-link,
+	.SearchResult-linklink {color: var(--norda-2) !important}
+	.Guides-header,
+	.HomeHeroGuides-sections .Hero-name-HomeHeroGuides {
+	 border-color: var(--foreground)!important
+		}
+	.App-content,
+	.Home,
+	.LandingPage,
+	.LanguageTools-table-row:nth-child(2n),
+	.Paginate {
+		background: var(--background)!important
+		}
+	.Select {
+		background-color: var(--background)!important
+		}
+	.SearchForm-icon-magnifying-glass {
+		filter: invert(85%)!important
+		}
+	AddonDescription-more-addons--theme .Card-contents .AddonsCard-list,
+	.AddonDescription-more-addons:not(.AddonDescription-more-addons--theme) .Card-contents .AddonsCard-list,
+	.AddonsByAuthorsCard .Card-contents .AddonsCard-list,
+	.AddonsCard--horizontal .Card-contents,
+	.AddonsCard--horizontal ul.AddonsCard-list .SearchResult-link,
+	.AutoSearchInput-suggestions-item,
+	.Card--photon .Card-contents,
+	.Card-contents,
+	.Card-contents li,
+	.Card-footer,
+	.Card-footer-link,
+	.Card-footer-text,
+	.Card-header,
+	.Categories .Card-contents,
+	.DropdownMenu-items::after,
+	.Hero .Card-contents,
+	.Home-SubjectShelf .Card-contents,
+	.LandingPage-header,
+	.MetadataCard,
+	.Search .SearchResults .SearchResult,
+	.Search .SearchResults-message,
+	.SearchForm-query,
+	.SearchForm-suggestions-item.SearchForm-suggestions-item,
+	.SectionLinks-dropdown .DropdownMenu-items,
+	input.AutoSearchInput-query {
+		background: var(--nordp-3)!important
+		}
+	.Addon-author,
+	.Addon-author a,
+	.Addon-author a:link .Button--action,
+	.Addon-title,
+	.AddonBadges .Badge,
+	.AddonTitle,
+	.Button--action,
+	.Button--action.Button--small:link,
+	.Button--action:link,
+	.Button--neutral,
+	.Button--neutral:link,
+	.Card--photon .Card-contents,
+	.Card-contents,
+	.Card-footer-text,
+	.Definition-dt,
+	.DropdownMenuItem,
+	.DropdownMenuItem-link a,
+	.DropdownMenuItem-link a:link,
+	.DropdownMenuItem-section,
+	.ExpandableCard-ToggleLink:link,
+	.Footer a:active,
+	.Footer a:hover,
+	.Footer-links-header a:link,
+	.GuidesAddonCard .AddonTitle a,
+	.GuidesAddonCard .GuidesAddonCard-content-header-title .AddonTitle-author,
+	.Home-SubjectShelf-link:link,
+	.Home-SubjectShelf-link:visited,
+	.Home-SubjectShelf-subheading,
+	.LandingPage-addonType-name,
+	.LandingPage-heading-content,
+	.MetadataCard-list dt,
+	.Paginate .Button.Paginate-item--current-page,
+	.Paginate .Button.Paginate-item:first-child,
+	.Paginate .Button.Paginate-item:last-child,
+	.Paginate .Button.Paginate-item:link:first-child,
+	.Paginate .Button.Paginate-item:link:last-child,
+	.Paginate .Button.Paginate-item:visited:first-child,
+	.Paginate .Button.Paginate-item:visited:last-child .Paginate-page-number,
+	.PermissionsCard-subhead,
+	.ReportAbuseButton-show-more,
+	.SearchContextCard-header,
+	.SearchFilters-label,
+	.SearchForm-query,
+	.SearchResult--meta-section,
+	.SearchResult-name,
+	.SearchResult-summary,
+	.Select,
+	input.AutoSearchInput-query {
+		color: var(--foreground)!important
+		}
+	.Paginate .Button.Paginate-item:active,
+	.Paginate .Button.Paginate-item:hover {
+		background-color: var(--background)!important
+		}
+	.AutoSearchInput-suggestions-item {
+		color: var(--foreground)
+		}
+	.Card-header {
+		color: var(--foreground)!important
+		}
+	.Card-contents li .Rating-star-group,
+	.Paginate-next::after,
+	.Paginate-previous::before {
+		filter: invert(70%)!important
+		}
+	.AddonMeta .MetadataCard-content a,
+	.AddonMeta .MetadataCard-content a.AddonMeta-reviews-content-link,
+	.AddonMeta .MetadataCard-content a.AddonMeta-reviews-content-link:link,
+	.AddonMeta .MetadataCard-content a.AddonMeta-reviews-content-link:visited,
+	.AddonMeta .MetadataCard-content a:link,
+	.AddonMeta .MetadataCard-content a:visited,
+	.AddonMeta .MetadataCard-title a,
+	.AddonMeta .MetadataCard-title a.AddonMeta-reviews-content-link,
+	.AddonMeta .MetadataCard-title a.AddonMeta-reviews-content-link:link,
+	.AddonMeta .MetadataCard-title a.AddonMeta-reviews-content-link:visited,
+	.AddonMeta .MetadataCard-title a:link,
+	.AddonMeta .MetadataCard-title a:visited,
+	.RatingsByStar-count a:active,
+	.RatingsByStar-count a:link,
+	.RatingsByStar-count a:visited,
+	.RatingsByStar-star a:active,
+	.RatingsByStar-star a:link,
+	.RatingsByStar-star a:visited {
+		color: var(--background)!important
+		}
+	/*.Rating-star {
+			  /*! background-image: url("data:image/svg+xml,%3Csvg width='17px' height='16px' viewBox='0 0 17 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch --%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs%3E%3C/defs%3E %3Cg id='Screens' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Extension-Detail---1366px' transform='translate(-1200.000000, -191.000000)' fill-rule='nonzero' fill='%23737373'%3E %3Cpath d='M1216.67559,197.013479 C1216.54115,196.628667 1216.19883,196.344304 1215.78203,196.271203 L1211.45804,195.530952 L1209.42135,191.617039 C1209.22458,191.238958 1208.8214,191 1208.38027,191 C1207.93914,191 1207.53597,191.238958 1207.33919,191.617039 L1205.30145,195.530952 L1200.98592,196.269177 C1200.56542,196.339521 1200.21894,196.624766 1200.08323,197.012329 C1199.94751,197.399891 1200.04437,197.827503 1200.33557,198.126387 L1203.43079,201.313214 L1202.78679,205.728392 C1202.72624,206.141968 1202.91235,206.553231 1203.26889,206.793722 C1203.62542,207.034213 1204.09248,207.063526 1204.47874,206.869654 L1208.37974,204.921305 L1212.28181,206.872692 C1212.66807,207.066564 1213.13512,207.037251 1213.49166,206.79676 C1213.84819,206.556269 1214.0343,206.145006 1213.97376,205.73143 L1213.3287,201.313214 L1216.42286,198.1274 C1216.71414,197.828621 1216.81115,197.401068 1216.67559,197.013479 Z' id='Star'%3E%3C/path%3E %3C/g%3E %3C/g%3E %3C/svg%3E")!important*/
+			
+	.Rating-selected-star {
+		background: url("data:image/svg+xml,%3Csvg width='17px' height='16px' viewBox='0 0 17 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch --%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs%3E%3C/defs%3E %3Cg id='Screens' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='Extension-Detail---1366px' transform='translate(-1268.000000, -191.000000)' fill-rule='nonzero' fill='%23D7D7DB'%3E %3Cg id='Icon/Star/Off' transform='translate(1268.093458, 191.000000)'%3E %3Cpath d='M16.9387231,6.0134792 C16.8019739,5.62866693 16.4537759,5.34430427 16.0298163,5.27120279 L11.6315676,4.53095169 L9.55990532,0.617038533 C9.35975238,0.238957594 8.94965505,-8.43205013e-17 8.50094816,0 C8.05224128,5.62136675e-17 7.64214395,0.238957594 7.44199101,0.617038533 L5.36925312,4.53095169 L0.979609481,5.26917748 C0.55189384,5.33952054 0.199461709,5.62476632 0.0614173919,6.01232884 C-0.0766269256,6.39989135 0.0218952463,6.82750347 0.318097391,7.1263875 L3.46646469,10.3132141 L2.81140637,14.7283917 C2.74982246,15.1419679 2.93913032,15.5532305 3.30178728,15.7937216 C3.66444423,16.0342127 4.13951821,16.0635259 4.53241344,15.8696543 L8.50041035,13.9213053 L12.4694829,15.8726923 C12.8623781,16.0665639 13.3374521,16.0372507 13.7001091,15.7967596 C14.062766,15.5562685 14.2520739,15.1450059 14.19049,14.7314296 L13.534356,10.3132141 L16.6816477,7.12740015 C16.9779332,6.82862115 17.0766057,6.40106827 16.9387231,6.0134792 Z' id='Star-Copy'%3E%3C/path%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E") 50%/contain no-repeat!important
+		}
+	.ShowMoreCard-contents::after {
+		background: linear-gradient(rgba(255,255,255,0),var(--background))!important
+		}
+	.Addon-details .AddonDescription-contents a:link,
+	.AddonMoreInfo-contents a:link,
+	.Card-footer-link a,
+	.Card-footer-link a:hover,
+	.Card-footer-link a:link,
+	.Card.ShowMoreCard.AddonDescription-version-notes a:link,
+	.DropdownMenuItem-link a:hover,
+	.Home-SubjectShelf-link:active,
+	.Home-SubjectShelf-link:focus,
+	.Home-SubjectShelf-link:hover,
+	.LanguageTools-table a:link,
+	.SearchResult-link:focus .SearchResult-name,
+	.SearchResult-link:hover .SearchResult-name {
+		color: var(--foreground)!important
+		}
+	.Button--action.Button--outline-only {
+		border-color: var(--background)!important
+		}
+	input.AutoSearchInput-query {
+		border-color: var(--background)!important
+		}
+	.Addon .InstallButton-button,
+	.Button--action,
+	.Button--action.Button--small,
+	.SearchForm-suggestions-item.SearchForm-suggestions-item--highlighted {
+		background: var(--nordp-2)!important
+	}
+	.Button--action.Button--outline-only:hover,
+	.Button--action:hover,
+	.SearchForm-query:hover {
+		border-color: var(--nordp-1)!important
+	}
+	.SearchForm-query:focus {
+		box-shadow: 0 0 5px 0 var(--in-content-border-highlight)!important;
+		border-color: var(--in-content-primary-button-background)!important
+	}
+	.AddonsCard--horizontal ul.AddonsCard-list .SearchResult-link:hover {
+		background: var(--accent)!important;
+		border-radius: 0!important
+	}
+	.Button--report {
+		text-shadow: none!important
+	}
+	.Icon-arrow,
+	.Icon-external {
+		filter: invert(0%)!important
+	}
+	.Icon-magnifying-glass {
+		filter: invert(0%)
+	}
+	.Icon-featured {
+		filter: invert(85%)!important
+	}
+	.Icon-plus-dark {
+		filter: invert(0%)!important
+	}
+	.Button--neutral.Button--puffy,
+	.Button--neutral:link.Button--puffy {
+		background: var(--nordf-0)!important;
+		color: var(--foreground)!important
+	}
+	.Button--neutral.Button--puffy:hover,
+	.Button--neutral:link.Button--puffy:hover {
+		background: var(--nordf-1)!important
+	}
+}
+@-moz-document regexp("^[file:///].*[^(html|svg)]$") {
+	:root {
+		background-color: var(--background)!important
+	}
+	body {
+		border-color: var(--background)!important;
+		background-color: var(--background)!important;
+		color: var(--foreground)!important
+	}
+	h1 {
+		border-color: var(--foreground)!important
+	}
+	body > table > tbody > tr:hover {
+		outline-color: var(--accent)!important;
+		background-color: var(--background)!important
+	}
+	.dir,
+	.file,
+	.symlink,
+	.up {
+		color: var(--in-content-link-color)!important
+		}
+}
+		
+@-moz-document regexp(".*\\.(p|P)(d|D)(f|F).*") {
+	#loadingBar .progress,
+	.dropdownToolbarButton > select,
+	.dropdownToolbarButton > select > option,
+	.overlayButton,
+	.secondaryToolbarButton,
+	.toolbarField,
+	body,
+	div#viewer {
+		background-color: var(--background)!important
+	}
+	body {
+		background-image: none!important
+	}
+	.splitToolbarButtonSeparator,
+	.verticalToolbarSeparator {
+		box-shadow: none!important;
+		background-color: var(--background)!important
+	}
+	div#toolbarViewer {
+		background-color: var(--background)!important
+	}
+	#numPages,
+	#pageNumber,
+	#scaleSelect {
+	color: var(--foreground)!important
+	}
+	.pdfViewer .page {
+		border-image: none!important
+	}
+	#pageNumber,
+	#scaleSelectContainer {
+		border: 1px solid!important;
+		border-color: var(--background)!important
+	}
+	#loadingBar {
+		position: relative;
+		width: 100%;
+		height: 4px;
+		background-color: var(--background)!important;
+		border-bottom: 1px solid!important
+	}
+	#overlayContainer > .container > .dialog {
+		background-image: none !important;
+		background-color: var(--background) !important;
+		color: var(--foreground)!important}
+	
+	#sidebarContainer,
+	#sidebarContent {
+		background-color: var(--background)!important
+	}
+	#toolbarSidebar {
+		background-color: var(--background)!important;
+		background-image: none!important;
+		border-color: var(--background)!important
+	}
+	.doorHanger,
+	.doorHangerRight {
+		border: 1px solid!important;
+		border-color: var(--background)!important;
+		box-shadow: none!important
+	}
+	#toolbarContainer,
+	.findbar,
+	.secondaryToolbar {
+		background-color: var(--background)!important;
+		background-image: none!important
+	}
+	.dropdownToolbarButton,
+	.overlayButton,
+	.secondaryToolbarButton,
+	.toolbarButton {
+		border: none!important;
+		color: var(--foreground)!important
+	}
+	.dropdownToolbarButton,
+	.overlayButton,
+	.toolbarButton:focus,
+	.toolbarButton:hover {
+		background-color: var(--norda-4)!important;
+		background-image: none!important;
+		border: none!important;
+		box-shadow: none!important
+		}
+	.secondaryToolbarButton:focus,
+	.secondaryToolbarButton:hover {
+		background-color: var(--background)!important;
+		background-image: none!important;
+		box-shadow: none!important
+	}
+	/*.secondaryToolbarButton::before,
+	.toolbarButton::before {
+		filter: invert % amount  !important
+	}*/
+	.secondaryToolbarButton.toggled,
+	.splitToolbarButton.toggled > .toolbarButton.toggled,
+	.toolbarButton.toggled {
+		background-color: var(--nordp-3)!important;
+		background-image: none!important;
+		box-shadow: none!important;
+		color: var(--foreground)!important
+	}
+	.horizontalToolbarSeparator {
+		background-color: var(--background)!important;
+		box-shadow: none!important
+	}
+}
+@-moz-document url-prefix(https://raw.githubusercontent.com) {
+	html {
+		background: var(--background)!important;
+		color: var(--foreground)!important
+	}
+	html#feedHandler,
+	html#feedHandler body {
+		background-color: var(--background)!important;
+		color: var(--foreground)!important
+	}
+	html#feedHandler h1 {
+		border-color: var(--background)!important;
+		color: var(--foreground)!important
+	}
+	html#feedHandler #feedBody,
+	html#feedHandler #feedHeader {
+		background-color: var(--background)!important;
+		border-color: var(--accent)!important;
+		color: var(--foreground)!important
+	}
+	html#feedHandler:link {
+		color: var(--in-content-link-color)!important
+	}
+	html#feedHandler #subscribeButton {
+		-moz-appearance: none!important;
+		background: var(--background)!important;
+		color: var(--foreground)!important;
+		border: 1px solid;
+		border-color: var(--accent)!important;
+		border-radius: 4px
+	}
+	html#feedHandler #subscribeButton:hover {
+		background: var(--background)!important
+	}
+	html#feedHandler .enclosures {
+		background: var(--background)!important;
+		border-color: var(--accent)!important
+	}
+	#feedHeaderContainer {
+		background-color: var(--background)!important;
+		display: inline-block!important
+	}
+	#feedHeaderContainerSpacer {
+		display: none!important
+	}
+	#feedBody div.entry a[href] {
+		color: var(--in-content-link-color)!important
+	}
+	#feedBody div.entry a[href]:hover {
+		color: var(--in-content-link-color-hover)!important
+		}
+	#feedBody div.entry a[href]:active {
+		color: var(--in-content-link-color-active)!important
+	}
+	#feedBody div.entry a[href]:visited {
+		color: var(--in-content-link-color-visited)!important
+	}
+}
+@-moz-document url-prefix(view-source) {
+	:root {
+		background-color: var(--in-content-page-background)!important;
+		color: var(--in-content-page-color)!important
+	}
+	pre[id]:before,
+	span[id]:before {
+		color: var(--in-content-page-color)!important
+	}
+	.highlight .end-tag,
+	.highlight .start-tag {
+		color: var(--theme-highlight-purple)!important
+	}
+	.highlight .comment {
+		color: var(--theme-highlight-green)!important
+	}
+	.highlight .cdata {
+		color: #c06!important
+	}
+	.highlight .doctype {
+		color: #4682b4!important
+	}
+	.highlight .pi {
+		color: var(--theme-highlight-red)!important
+	}
+	.highlight .entity {
+		color: #dea174!important
+	}
+	.highlight .attribute-name {
+		color: var(--theme-highlight-green)!important
+	}
+	.highlight .attribute-value {
+		color: var(--theme-highlight-blue)!important
+	}
+	.highlight .markupdeclaration {
+		color: #4682b4!important
+	}
+	.highlight .error,
+	.highlight .error > :-moz-any(.start-tag,.end-tag,.comment,.cdata,.doctype,.pi,.entity,.attribute-name,.attribute-value) {
+		color: #de7474!important
+	}
+}
+
+
+/* uBlock Origin Color change*/
+@-moz-document url-prefix("moz-extension://3c713b0c-411e-46b3-bf02-9c3ea29f1046/") {
+	body { background-color: var(--uBo-bg) !important; color: var(--uBo-text) !important; }
+	a { color: var(--a) !important; }
+	h2 { background-color: var(--h2)  !important; color: var(--h2-text) !important; }
+	code { background-color: var(--code) !important; }
+	#switch .fa-icon { fill: var(--switch-fa-on) !important; }
+	body.off #switch .fa-icon { fill: var(--switch-fa-off)!important; }
+	.tool { color: var(--tool) !important; }
+	.tool.enabled:hover { fill: var(--tool-enable-hover) !important; }
+	html#ublock0-epicker, #ublock0-epicker body {background: transparent !important; color: var(--h2-text)!important;}
+	#ublock0-epicker aside {
+		background-color: #000 !important;}
+	.permatoolbar { background-color: var(--permatoolbar-bg) !important; }
+	.permatoolbar .button { background-color: var(--permatoolbar-button) !important; }
+	.permatoolbar .button:hover { background-color: var(--permatoolbar-button-hover) !important; }
+	#tooltip { display: none}/*{ background-color: var(--tooltip-bg) !important; border: 1px solid var(--border-fw) !important; color: var(--tooltip-text) !important; }*/
+	#firewallContainer > div { background-color: var(--fw-bg) !important; }
+	#firewallContainer > div:hover { background-color: var(--fw-hover) !important; }
+	#firewallContainer > div > span { color: var(--bg) !important; border-bottom: 1px solid var(--borders-fw) !important; }
+	#firewallContainer > div > span:first-of-type ~ span { border-left: 1px solid var(--borders-fw) !important; }
+	#extraTools { background-color: var(--extraTools-bg) !important; }
+	#extraTools > span:hover { fill: var(--extraTool-spanhover) !important; }
+	#dashboard-nav-widgets { background-color: var(--dash-nav-widgets) !important; border-bottom: 1px solid var(--dash-borders) !important; }
+	.tabButton { background-color: var(--tabbutton) !important; border: 1px solid var(--tab-borders) !important; border-bottom: 1px solid var(--tab-borders) !important; color: var(--tabbutton-text) !important; }
+	.tabButton.selected { background-color: var(--tab-select) !important; border-bottom: 1px solid var(--borders-fw) !important; }
+	#diff li { background-color: var(--diffli-bg) !important; }
+	#diff li:nth-child(even) { background-color: var(--diffli-nth-bg) !important; }
+	#diff textarea { background-color: var(--uBo-bg) !important; color: var(--diff-textarea-text) !important; } 
+	#loggerSettingsDialog,
+	#modalOverlayContainer,
+	#netFilteringDialog,
+	#netFilteringDialog > .panes > .details > div,
+	#netFilteringDialog > div.panes > .dynamic .row {background-color: var(--logdialog-bg) !important;}
+	#domTree { color: var(--dark-text)!important}
+	#ruleFilter input,
+  	input[type=number] {
+    	-moz-appearance: none!important;
+    	background-color: var(--background)!important;
+    	border: 1px solid!important;
+    	border-color: var(--foregrond)!important;
+    	color: var(--foreground)!important
+  }
+}
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/***************************************************************************************/
+
+@-moz-document url(about:preferences),url-prefix(about:preferences){
+
+	.category {
+	  margin-inline-start: 0px !important;
+	  padding-inline-end: 0px !important;
+	}
+
+ 	#preferences-stack,.sticky-container,
+	page,
+	vbox.dialogBox, 
+	vbox.box-inherit dialog-content-box,
+	.dialogBox .groupbox-title {
+	  -moz-appearance: none !important;
+	  background: var(--background)!important;
+	}
+
+	#categories {
+	  background: transparent !important;
+	}
+	
+	#dialogFrame,
+	.main-content{
+	  background-color: var(--background) !important;
+	}
+	
+	.groupbox-body,
+	#dialogFrame{
+	  background-color: var(--background) !important;
+	}
+	
+	.groupbox-body{
+	  padding: 2px !important;
+	  margin: 2px !important;
+	}
+	
+	.sticky-container,
+	.search-container  {
+	  width: 100% !important;
+	  margin-inline: 0px !important;
+	  padding-inline: 0px !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	}
+	
+	#policies-container, #searchInput {
+	  min-height: unset !important;
+	  margin: 3px 0 !important;
+	}
+	
+	.header-name {
+	  visibility: collapse !important;
+	}
+	
+	/* main colors category items */
+	#categories .category[selected]{
+	  background-color: var(--background) !important;
+	  border-inline-start-color: #c1d2ee !important;
+	  -moz-border-start-color:  #c1d2ee !important;
+	  color: var(--background) !important;
+	}
+
+	#categories .category:not([selected]):hover{
+	  background-color: var(--background) !important;
+	  color: black !important;
+	}
+
+	#categories .category:not([selected]):not(:hover){
+	  color: black !important;
+	}
+
+	#categories .category {
+	  transition-duration: unset !important;
+	}
+	
+	/* groupbox */
+	.main-content groupbox{
+	  -moz-appearance: groupbox !important;
+	}
+
+	.main-content groupbox caption {
+	  background: -moz-Dialog !important;
+	  -moz-margin-start: 2px !important;
+	  -moz-padding-start: 2px !important;
+	  -moz-margin-end: 2px !important;
+	  -moz-padding-end: 2px !important;
+	}
+	
+	.main-content .groupbox-title {
+	  margin-top: 0px !important;
+	}
+	
+	#firefoxAccountCategory {
+	  margin-top: 20px !important;
+	}
+	
+	/* category icons */
+	#category-search .category-icon {
+	  list-style-image: url("./../../image/prefs_search.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-general .category-icon {
+	  list-style-image: url("./../../image/prefs_general.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-home .category-icon {
+	  list-style-image: url("./../../image/prefs_home.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-privacy .category-icon {
+	  list-style-image: url("./../../image/prefs_privacy.png") !important; 
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#category-sync .category-icon {
+	  list-style-image: url("./../../image/prefs_sync.png") !important;
+	  -moz-image-region: rect(0, 32px, 32px, 0) !important;
+	}
+	#categories .category .category-icon {
+	  height: 32px !important;
+	  width: 32px !important;
+	}
+
+	/* alignment and text/font appearance */
+	#mainPrefPane {
+	  color: var(--foreground) !important;
+	  -moz-padding-start: 20px !important;
+	  margin-top: -35px !important;
+	  -moz-margin-start: -20px !important;
+	}
+	
+	textbox {
+	  min-height: 24px !important;
+	  height: 24px !important;
+	}
+
+	.main-content {
+	  margin-top: 20px !important;
+	  margin-bottom: 20px !important;
+	  background-color: var(--background) !important;
+	  -moz-margin-start: -1px !important;
+	}
+
+	.header label {
+	  font-weight: bold !important;
+	  padding-bottom: 0 !important;
+	}
+
+	.header:not(#header-advanced){
+	  margin-bottom: 0px !important;
+	}
+
+	#advancedPrefs #tabsElement tab {
+	  min-height: 30px !important;
+	}	
+
+	/* treechildren*/
+	#handlersView richlistitem,
+	#engineList treechildren::-moz-tree-row,
+	#blocklistsTree treechildren::-moz-tree-row {
+	  min-height: 24px !important;
+	}
+	
+	treecols,
+	treecol {
+	  min-height: unset !important;
+	  height: 24px !important;
+	}
+	
+	.autocomplete-tree treecols,
+	.autocomplete-tree treecol {
+	  height: unset !important;
+	}
+
+	/* buttons / menulists */
+	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle),
+	menulist {
+	  min-height: unset !important;
+	  height: unset !important;
+	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+	}
+	
+	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle) {
+	  padding: 0px !important;
+	}
+	menulist{
+	  padding:2px !important;
+	}
+	
+	button:not(.button-link):not(.close-icon):not(.spinbuttons-button){
+	  -moz-appearance: none !important;
+	}
+
+	menulist{
+	  -moz-appearance: none !important;
+	}
+	
+	
+	
+	/* checkbox and radio items */
+	checkbox .checkbox-check {
+	  -moz-appearance: none  !important;
+	  box-shadow: unset !important;
+	  padding: unset !important;
+	  margin: unset !important;
+	}
+
+	radio .radio-check {
+	  -moz-appearance: none !important;
+	  box-shadow: unset !important;
+	  padding: unset !important;
+	  margin: unset !important;
+	}
+
+	radio,
+	checkbox {
+	  padding: unset !important;
+	  margin: unset !important;
+	}
+	
+	
+	}
+	
+	/* tweaks for small windows */
+	@media (max-width: 830px) {
+	  
+	  .category {
+		padding-inline-start: 10px !important;
+		margin-inline-end: 0px !important;
+	  }
+
+	  .main-content {
+		padding-left: 28px !important;
+		padding-right: 28px !important;
+	  }
+
+	}
+	
+	/* advanced category tabs */
+	#advancedPrefs #tabsElement tab:not([selected]):not(:hover),
+	#advancedPrefs #tabsElement {
+	  background-color: var(--background) !important;
+	}
+
+	#advancedPrefs #tabsElement tab[selected] {
+	  background-color: var(--accent) !important;
+	  border-bottom-color: var(--accent) !important;
+	}
+
+	#advancedPrefs #tabsElement tab:not([selected]):hover {
+	  background-color: var(--background) !important;
+	}
+
+	#advancedPrefs #tabsElement tab,
+	#advancedPrefs #tabsElement {
+	  min-height: unset !important;
+	}
+
+/* preference sub windows */
+*[subdialog="true"] > vbox,
+*[subdialog="true"] > hbox,
+*[subdialog="true"] .prefWindow-dlgbuttons,
+*[subdialog="true"] prefpane,
+*[subdialog="true"] .contentPane,
+*[subdialog="true"] .dialog-content-box,
+*[subdialog="true"] .largeDialogContainer{
+  color: var(--background) !important;
+}
+
+*[subdialog="true"] textbox {
+  min-height: 24px !important;
+  height: 24px !important;
+}
+
+/* treechildren */
+*[subdialog="true"] treecols,
+*[subdialog="true"] treecol {
+  min-height: unset !important;
+  height: 20px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+*[subdialog="true"] .autocomplete-tree treecols,
+*[subdialog="true"] .autocomplete-tree treecol {
+  height: unset !important;
+}
+*[subdialog="true"] treechildren {
+  min-height: unset !important;
+}
+
+/* buttons/menulists */
+*[subdialog="true"] button:not(.button-link):not(.spinbuttons-button),
+*[subdialog="true"] menulist{
+  min-height: unset !important;
+  height: unset !important;
+}
+
+*[subdialog="true"] button:not(.button-link):not(.close-icon):not(.spinbuttons-button){
+  -moz-appearance: button !important;
+}
+*[subdialog="true"] menulist{
+  -moz-appearance: menulist !important;
+}
+
+/* menu popup */
+@media all and (-moz-windows-theme:aero) {
+	*[subdialog="true"] menupopup menuitem {
+	  -moz-appearance: menuitem !important;
+	}
+	*[subdialog="true"] menupopup menuitem:not([disabled="true"]),
+	*[subdialog="true"] menupopup menuitem:not([disabled="true"])[selected] {
+	  color: var(--background) !important;
+	}
+}
+@media all and (-moz-windows-classic) {
+    
+	*[subdialog="true"] menupopup menuitem {
+	  background:var(--foreground) !important;
+	  padding-top: unset !important;
+	  padding-bottom: unset !important;
+	}
+	*[subdialog="true"] menupopup menuitem:not([disabled="true"]) {
+	  color: var(--background) !important;
+	}
+	*[subdialog="true"] menupopup menuitem[selected],
+	*[subdialog="true"] menupopup menuitem[_moz-menuactive="true"] {
+	  background: highlight !important;
+	}
+	*[subdialog="true"] menupopup menuitem:not([disabled="true"])[selected],
+	*[subdialog="true"] menupopup menuitem:not([disabled="true"])[_moz-menuactive="true"] {
+	  color: white !important;
+	}
+
+}
+
+/* checkbox / radios */
+*[subdialog="true"] checkbox .checkbox-check {
+  -moz-appearance: checkbox  !important;
+  box-shadow: unset !important;
+  padding: unset !important;
+  margin: unset !important;
+}
+
+*[subdialog="true"] radio .radio-check {
+  -moz-appearance: radio !important;
+  box-shadow: unset !important;
+  padding: unset !important;
+  margin: unset !important;
+}
+
+*[subdialog="true"] radio,
+*[subdialog="true"] checkbox {
+  padding: unset !important;
+  margin: unset !important;
+}
+
+@media not all and (-moz-windows-theme:aero) {
+
+	*[subdialog="true"] checkbox image,
+	*[subdialog="true"] radio image {
+	  width: 14px !important;
+	  height: 14px !important;
+	  margin: 0 !important;
+	}
+	
+	*[subdialog="true"] radio *{
+	  outline: unset !important;
+	}
+	@media all and (-moz-windows-classic) {
+	
+		*[subdialog="true"] checkbox image,
+		*[subdialog="true"] radio image {
+		  width: 10px !important;
+		  height: 10px !important;
+		}
+		*[subdialog="true"] checkbox {
+		  margin-top: 2px !important;
+		  margin-bottom: 2px !important;
+		}
+
+	}
+}
+
+@media (min-resolution: 1.1dppx) {
+	*[subdialog="true"] checkbox image,
+	*[subdialog="true"] radio image {
+	  width: 10px !important;
+	  height: 10px !important;
+	}
+	
+	#FontsDialog checkbox image {
+	  min-width: 10px !important;
+	  min-height: 10px !important;
+	  width: 10px !important;
+	  height: 10px !important;
+	}
+	
+	#FontsDialog checkbox label {
+	  -moz-margin-start: -4px !important;
+	}
+}
+
+@media all and (-moz-windows-theme:aero) {
+	
+  @media (-moz-os-version: windows-win7) {
+	
+	*[subdialog="true"] checkbox .checkbox-check,
+	*[subdialog="true"] radio .radio-check,
+	*[subdialog="true"] checkbox image,
+	*[subdialog="true"] radio image {
+	  width: 10px !important;
+	}
+
+	#FontsDialog checkbox image {
+	  min-width: 10px !important;
+	  min-height: 10px !important;
+	  width: 10px !important;
+	  height: 10px !important;
+	}
+	
+	#FontsDialog checkbox label {
+	  -moz-margin-start: -4px !important;
+	}
+
+  }
+	
+}
+
+/*
+@-moz-document domain("invidio.us") {
+#player_html5_api {
+	outline:none;
+	width:1600px !important;
+	background-color:#000;
+	height: 900px !important;
+	margin-left: -110px !important;
+   }
+#player {
+	width:1600px !important;
+	background-color:#000
+   }
+player-container {
+	height: 900px !important;
+	width: 1600px !important;
+	padding-bottom: 0px!important;
+   }
+		
+*88888888/
+.vjs-poster {
+	display: none !important;
+	left: unset !important;
+	   }
+	   
+   }
+   
+.video-js .vjs-tech {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:900px !important;
+   }
+.pure-u-md-20-24 > div:nth-child(5) {
+	border-top-style: solid;
+	border-top-width: 166px !important;
+   }
+.vjs-control-bar { 
+	height: 0px;
+	top: 100px;
+	margin-top: 110px !important;
+	width: 1500px !important;
+	margin-left: -50px;
+}
+	   
+
+.video-js .vjs-control-bar {
+	display:none;
+	width:100%;
+	position:sticky !important;
+	bottom:0;
+	left:0;
+	right:0;
+	height:3em;
+	background-color:#2b333f;
+	background-color:rgba(43,51,63,.7)
+   }
+/*
+.controlsOverlay {
+	width: 1600px!important;
+   }
+#player-container {
+	position: unset; */
+	/*! padding-bottom: 82vh; */
+	/*! height: 0; 
+  }  
+  @media only screen and (max-aspect-ratio: 16/9) {
+	.player-dimensions.vjs-fluid {
+	  padding-top: 46.86% !important;
+	}
+  
+	#player-container {
+	  /*! padding-bottom: 46.86% !important; 
+	}
+  }
