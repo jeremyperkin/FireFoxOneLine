@@ -1131,10 +1131,10 @@ ytd-watch-flexy[flexy_]:not([is-vertical-video_]) #player-container-inner.ytd-wa
 	margin-top: -150px!important;
    }
    
-*/ }
+*/
 
 
-
+}
 	*, 
 	*:before, 
 	*:after 
@@ -1701,7 +1701,7 @@ ytd-watch-flexy[flexy_]:not([is-vertical-video_]) #player-container-inner.ytd-wa
 
 
 /* uBlock Origin Color change*/
-@-moz-document url-prefix("moz-extension://3c713b0c-411e-46b3-bf02-9c3ea29f1046/") {
+@-moz-document url-prefix("moz-extension://edbab879-0b27-f840-8e01-fef45d1e872b/") {
 	body { background-color: var(--uBo-bg) !important; color: var(--uBo-text) !important; }
 	a { color: var(--a) !important; }
 	h2 { background-color: var(--h2)  !important; color: var(--h2-text) !important; }
